@@ -3,7 +3,7 @@ Install tutorial(graphic driver(rtx2080ti), cuda 10.2, cudnn)
 
 RTX 2080ti Graphic Driver Install
 =========
-1. Check if there is an existing Graphic driver installed.
+##1. Check if there is an existing Graphic driver installed.
 ```bash
 
 # cat /proc/driver/nvidia/version   
@@ -11,7 +11,7 @@ cat: /proc/driver/nvidia/version: No such file or directory
 
 ```
 
-2. Check for compatible Graphic Drivers
+##2. Check for compatible Graphic Drivers
 ```
 # ubuntu-drivers devices   
 
@@ -26,7 +26,8 @@ driver   : xserver-xorg-video-nouveau - distro free builtin
 
 ```
 
-
+CUDA 10.2 Install
+=========
 ## CUDA 10.2 Install
 
 OS : ubuntu 18.04   
