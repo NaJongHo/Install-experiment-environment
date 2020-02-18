@@ -5,15 +5,13 @@ RTX 2080ti Graphic Driver Install
 =========
 1. Check if there is an existing Graphic driver installed.
 ```bash
-
 # cat /proc/driver/nvidia/version   
 cat: /proc/driver/nvidia/version: No such file or directory   
 
 ```
 
 2. Check for compatible Graphic Drivers
-```
-
+```bash
 # ubuntu-drivers devices
 
 == /sys/devices/pci0000:00/0000:00:01.1/0000:02:00.0 ==   
