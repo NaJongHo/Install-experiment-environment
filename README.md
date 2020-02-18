@@ -30,12 +30,12 @@ file name is "NVIDIA-Linux-x86_64-440.59.run"
 
 ```
 
-3. Install 
-
-Press ctrl+alt+f2 on the login screen   
-Enter the ID/PWD   
+3. Install   
 
 ```bash
+Press ctrl+alt+f2 on the login screen   
+Enter the ID/PWD 
+
 # cd Download
 # chmod +x ./NVIDIA-Linux-x86_64-440.59.run   
 # sudo sh ./NVIDIA-Linux-x86_64-440.59.run
