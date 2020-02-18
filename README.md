@@ -13,7 +13,7 @@ cat: /proc/driver/nvidia/version: No such file or directory
 
 ##2. Check for compatible Graphic Drivers
 ```
-# ubuntu-drivers devices   
+# ubuntu-drivers devices
 
 == /sys/devices/pci0000:00/0000:00:01.1/0000:02:00.0 ==   
 modalias : pci:v000010DEd00001E02sv000010DEsd000012A3bc03sc00i00   
@@ -25,6 +25,8 @@ driver   : nvidia-driver-415 - third-party free
 driver   : xserver-xorg-video-nouveau - distro free builtin   
 
 ```
+recommended driver is nvidia-driver-440
+so Download the driver for your version.
 
 CUDA 10.2 Install
 =========
