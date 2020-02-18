@@ -24,6 +24,7 @@ driver   : nvidia-driver-415 - third-party free
 driver   : xserver-xorg-video-nouveau - distro free builtin   
 
 ```
+
 recommended driver is nvidia-driver-440
 so Download the driver for your version.
 Download [Link](https://www.nvidia.co.kr/Download/driverResults.aspx/156786/kr)
@@ -40,6 +41,7 @@ Enter the ID/PWD
 # sudo sh ./NVIDIA-Linux-x86_64-440.59.run
 
 ```
+
 Install!!!!!!
 
 4. Confirm installation
