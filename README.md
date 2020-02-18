@@ -26,6 +26,29 @@ driver   : xserver-xorg-video-nouveau - distro free builtin
 ```
 recommended driver is nvidia-driver-440
 so Download the driver for your version.
+Download [Link](https://www.nvidia.co.kr/Download/driverResults.aspx/156786/kr)
+file name is "NVIDIA-Linux-x86_64-440.59.run"
+
+3. Install 
+
+Press ctrl+alt+f2 on the login screen
+Enter the ID/PWD
+
+```bash
+# cd Download
+# chmod +x ./NVIDIA-Linux-x86_64-440.59.run
+# sudo sh ./NVIDIA-Linux-x86_64-440.59.run
+
+```
+Install!!!!!!
+
+4. Confirm installation
+```bash
+# nvidia-smi
+
+```
+
+
 
 CUDA 10.2 Install
 =========
