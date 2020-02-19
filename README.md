@@ -1,5 +1,5 @@
 # Install-experiment-environment
-Install tutorial(graphic driver(rtx2080ti), cuda 10.2, cudnn)
+Install tutorial(graphic driver(rtx2080ti), cuda 10.2, cudnn) on ubuntu 18.04
 
 RTX 2080ti Graphic Driver Install
 =========
