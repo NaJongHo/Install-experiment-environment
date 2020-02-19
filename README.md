@@ -56,22 +56,42 @@ CUDA 10.2 Install
 ## CUDA 10.2 Install
 
 ```bash
-# wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin   
-# sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600   
-# wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda-repo-ubuntu1804-10-2-local-10.2.89-440.33.01_1.0-1_amd64.deb   
-# sudo dpkg -i cuda-repo-ubuntu1804-10-2-local-10.2.89-440.33.01_1.0-1_amd64.deb   
-# sudo apt-key add /var/cuda-repo-10-2-local-10.2.89-440.33.01/7fa2af80.pub   
-# sudo apt-get update   
-# sudo apt-get -y install cuda   
+# wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run 
+# sudo sh cuda_10.2.89_440.33.01_linux.run
+
+Export path
+# export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
+# nvcc -V
+# sudo reboot
+
+Open Bashrc file and 'sudo subl ~/.bashrc' and paste and update the bashrc
+
+# export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
+# export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+# source ~/.bashrc
+
+Check Install status
+# nvcc -V
+
 ```
 
 
 ## CUDNN Install
+=========
 
-Train data : 26 images   
-Validation data : 3 images   
-ground truth : json file   
+check cudnn version and download
+https://developer.nvidia.com/rdp/cudnn-archive
 
- 
+```bash
+# cd download path
+# sudo tar -xzvf cudnn-9.0-linux-x64-v7.0.tgz 
+# cd cuda
+# sudo cp include/cudnn.h /usr/local/cuda/include
+# sudo cp lib64/libcudnn* /usr/local/cuda/lib64
+# sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
+
+Check Install status
+# cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
+```
 
 
